@@ -19,6 +19,13 @@ services:
     #   - "traefik.http.routers.<unique-name>.entrypoints=websecure"
     #   - "traefik.http.routers.<unique-name>.tls.certResolver=letsencrypt"
     #   - "traefik.http.services.<unique-name>.loadbalancer.server.port=3000"
+    labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.vanshapp.rule=Host(`vansh.traefik.me`)"
+        - "traefik.http.routers.vanshapp.entrypoints=websecure"
+        - "traefik.http.routers.vanshapp.tls.certResolver=letsencrypt"
+        - "traefik.http.services.vanshapp.loadbalancer.server.port=3000"
+
 networks:
   dokploy-network:
     external: true
