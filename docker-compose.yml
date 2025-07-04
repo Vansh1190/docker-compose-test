@@ -10,7 +10,7 @@ services:
         NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
     restart: always
     ports:
-      - 3011:3000
+      - 3000
     networks:
       - dokploy-network
     # labels:
