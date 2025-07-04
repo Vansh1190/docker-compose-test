@@ -9,8 +9,8 @@ services:
         ENV_VARIABLE: ${ENV_VARIABLE}
         NEXT_PUBLIC_ENV_VARIABLE: ${NEXT_PUBLIC_ENV_VARIABLE}
     restart: always
-    ports:
-      - 3000
+    # ports:
+    #   - 3000
     networks:
       - dokploy-network
     # labels:
