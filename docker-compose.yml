@@ -19,6 +19,6 @@ services:
     #   - "traefik.http.routers.<unique-name>.entrypoints=websecure"
     #   - "traefik.http.routers.<unique-name>.tls.certResolver=letsencrypt"
     #   - "traefik.http.services.<unique-name>.loadbalancer.server.port=3000"
-networks:
-  dokploy-network:
-    external: true
+# networks:
+#   dokploy-network:
+#     external: true
