@@ -21,6 +21,7 @@ services:
     #   - "traefik.http.services.<unique-name>.loadbalancer.server.port=3000"
     labels:
         - "traefik.enable=true"
+        - "traefik.http.routers.vanshs-projects-tesgin2a-nn5zry-38-web.rule=Host(`vanshs-proj.traefik.me`)"
         - "traefik.http.routers.vanshapp.rule=Host(`vansh.traefik.me`)"
         - "traefik.http.routers.vanshapp.entrypoints=websecure"
         - "traefik.http.routers.vanshapp.tls.certResolver=letsencrypt"
