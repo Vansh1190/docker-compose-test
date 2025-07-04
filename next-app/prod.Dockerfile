@@ -12,8 +12,8 @@ RUN npm install
 COPY . .
 
 # 5. Build the app
-RUN npm run build
+# RUN npm run build
 
 # 6. Expose and start
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
