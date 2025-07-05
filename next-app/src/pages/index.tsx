@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>🚀 Welcome to Your Devloper Application</h1>
+        <h1 className={styles.title}>🚀 Welcome to Your Devloper Application and CodeMate Build</h1>
 
         <p className={styles.description}>
           Deployed with <code className={styles.code}>Docker Compose</code> — running in <strong>dev mode</strong>
